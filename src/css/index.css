@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(78, 33, 146);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+header {
+    border: 0;
+    background-color: rgb(10, 10, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+
+#logo {
+    max-width: 300px;
+}
+
+#generic-big-text {
+    margin: 0.8rem;
+    color: rgb(163, 63, 255);
+    font-size: 3rem;
+}
+
+#aboutus {
+    border: 10px solid rgb(10, 10, 46);
+    border-radius: 20px;
+    background-color: rgb(10, 10, 46);
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+}
+
+.color {
+    color: rgb(249, 168, 255);
+}
