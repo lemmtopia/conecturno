@@ -1,14 +1,14 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(78, 33, 146);
+    background-color: rgb(20, 12, 56);
     color: white;
     font-family: 'JetBrains Mono', monospace;
 }
 
 header {
     border: 0;
-    background-color: rgb(10, 10, 46);
+    background-color: rgb(20, 12, 56);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -26,9 +26,9 @@ header {
 }
 
 #aboutus {
-    border: 10px solid rgb(10, 10, 46);
+    border: 10px solid rgb(20, 12, 56);
     border-radius: 20px;
-    background-color: rgb(10, 10, 46);
+    background-color: rgb(20, 12, 56);
     font-size: 18px;
     width: 80%;
     margin: auto;
@@ -36,4 +36,25 @@ header {
 
 .color {
     color: rgb(249, 168, 255);
+}
+
+#generic-catchy-text-section {
+    background: black;
+    padding: 2rem;
+    margin: auto;
+    border: 0;
+
+}
+
+#aboutus-part:hover{
+    top: -10px;
+}
+
+#aboutus-part {
+    background: black;
+    background: linear-gradient(180deg, black 0%, rgba(20, 12, 56, 1) 100%);
+
+    position: relative;
+    top: 0;
+    transition: top ease 0.2s;
 }
