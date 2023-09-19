@@ -18,12 +18,12 @@ const slides = [
 var currentSlide = 0;
 
 function changeSlide() {
-    staffSection.innerHTML = `<p>${slides[currentSlide]}</p>`;
+    staffSection.innerHTML = `<p id="message">${slides[currentSlide]}</p>`;
     if (currentSlide < slides.length) currentSlide++;
     else currentSlide = 0;
 
-    setTimeout(changeSlide, 5000);
+    setTimeout(changeSlide, slides[currentSlide].length * 50);
 }
 
-staffSection.innerHTML = `<p>${slides[currentSlide]}</p>`;
-setTimeout(changeSlide, 5000);
+staffSection.innerHTML = `<p id="message">${slides[currentSlide]}</p>`;
+changeSlide();
