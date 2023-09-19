@@ -14,15 +14,32 @@ const slides = [
     'Prazer, me chamo Rebeca. Tenho 15 anos, adoro ler, ouvir músicas e principalmente fazer novas amizades.',
     'Me chamo Larissa, tenho muito interesse em moda e gosto de estar sempre por dentro das tendências. Também sou apaixonada por escrever poemas e amo ouvir Taylor Swift e Lana Del Rey.'
 ];
+const images = [
+   './img/lari.png',
+   './img/caio.jpg',
+   './img/paulo.jpg',
+   './img/teodeio.png',
+   './img/edu.jpg',
+   './img/natan.jpg',
+   './img/dany.jpg',
+   './img/maria.png',
+   './img/maria2.png',
+   './img/isa.jpg',
+   '',
+   './img/rebeca.png',
+   './img/larissa2.jpg'
+];
 
 var currentSlide = 0;
 
 function changeSlide() {
-    staffSection.innerHTML = `<p id="message">${slides[currentSlide]}</p>`;
-    if (currentSlide < slides.length) currentSlide++;
+    if (images[currentSlide] != '') {
+        staffSection.innerHTML = `<img id="pfp" src="${images[currentSlide]}"><p id="message">${slides[currentSlide]}</p><button id="next" onclick="changeSlide();">Próximo.</button>`;
+    } else {
+        staffSection.innerHTML = `<p id="message">${slides[currentSlide]}</p><button id="next" onclick="changeSlide();">Próximo.</button>`;
+    }
+    if (currentSlide < slides.length - 1) currentSlide++;
     else currentSlide = 0;
-
-    setTimeout(changeSlide, slides[currentSlide].length * 50);
 }
 
 staffSection.innerHTML = `<p id="message">${slides[currentSlide]}</p>`;

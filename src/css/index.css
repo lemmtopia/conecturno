@@ -72,11 +72,59 @@ header {
     transition: top ease 0.2s;
 }
 
-#message {
+#staff {
     padding: 2.4rem;
     background: black;
-    width: 90%;
+    width: 70%;
     border-radius: 20px;
     margin: auto;
     text-align: justify;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+}
+
+#message {
+    padding-top: 1rem;
+    margin: auto;
+}
+
+#pfp {
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+
+    border-radius: 120px;
+}
+
+footer {
+    padding: 2.4rem;
+    background: black;
+    margin: auto;
+    text-align: center;
+ 
+    font-size: small;
+}
+
+#next {
+    background-color: black;
+    margin: auto;
+    margin-top: 2rem;
+    color: white;
+    font-size: 12;
+    padding: 0.8rem;
+    border: 3px solid black;
+    border-radius: 20px;
+
+    transition: all ease 0.2s;
+}
+
+#next:hover {
+    color:black;
+    background-color: white;
+    border-color: white;
 }
