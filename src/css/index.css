@@ -12,18 +12,36 @@ header {
     width: 100%;
     background-color: rgb(20, 12, 56);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     color: white;
 }
 
 #logo {
+    margin: auto;
     max-width: 300px;
+}
+
+#menu-button {
+    background: transparent;
+    border: 0;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+#menu {
+    background: rgb(12, 6, 24);
+    text-align: center;
+}
+
+#menu-link {
+    font-size: 14px;
+    color: white;
 }
 
 #generic-big-text {
     margin: 0.8rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
     color: rgb(163, 63, 255);
     font-size: 2.6rem;
 }

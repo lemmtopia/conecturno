@@ -29,6 +29,9 @@ const images = [
    './img/rebeca.png',
    './img/larissa2.jpg'
 ];
+const menu = document.getElementById("menu");
+
+const menuContent = '<a href="./index.html" id="menu-link">Sobre nós</a><br><a href="" id="menu-link">Acontece no Noturno</a><br><a href="" id="menu-link">Vestibulares</a>';
 
 var currentSlide = 0;
 
@@ -44,3 +47,8 @@ function changeSlide() {
 
 staffSection.innerHTML = `<p id="message">${slides[currentSlide]}</p>`;
 changeSlide();
+
+function showMenu() {
+    if (menu.innerHTML == '') menu.innerHTML = menuContent;
+    else menu.innerHTML = '';
+}
