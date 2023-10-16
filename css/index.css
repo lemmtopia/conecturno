@@ -117,6 +117,17 @@ header {
     margin: auto;
 }
 
+#content {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding: 2px;
+}
+
+#empty {
+    height: 100vh;
+}
+
 #pfp {
     margin: auto;
     width: 120px;
